@@ -16,6 +16,7 @@
 body {
 	font-family: 'Karla', sans-serif;
 	margin: 0;
+	font-size: 1rem;
 }
 
 h1,
@@ -45,4 +46,134 @@ img {
 	width: 90%;
 	max-width: 375px;
 	margin: 0 auto;
+}
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 1em 2.8em;
+	border: 0;
+	background: 0;
+	font-family: inherit;
+}
+
+.btn-primary {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: 1.5px solid var(--Very-Light-Gray);
+	color: var(--Very-Light-Gray);
+}
+
+/* navbar */
+
+header {
+	background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat bottom
+			right,
+		var(--Dark-Violet);
+}
+
+.navbar {
+	background: var(--Very-Light-Gray);
+}
+
+.nav-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em 0;
+}
+
+.nav-list {
+	display: none;
+}
+
+.mobile-menu {
+	cursor: pointer;
+}
+
+/* hero */
+.hero {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-img {
+	order: -1;
+}
+
+.hero-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4em 0;
+	text-align: center;
+	color: var(--Very-Light-Gray);
+	background: url(../images/bg-pattern-intro-left-mobile.svg) no-repeat;
+}
+
+.hero-title {
+	font-size: 3rem;
+	max-width: 15ch;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.hero-subtitle {
+	max-width: 34ch;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	line-height: 1.6;
+}
+
+/* section - we're different */
+.we {
+	text-align: center;
+	padding: 6em 0 4em;
+}
+
+.section-title {
+	margin: 0 0 1.5em;
+	font-size: 2.5rem;
+	position: relative;
+	color: var(--Very-Dark-Violet);
+}
+
+.section-title::before {
+	position: absolute;
+	content: '';
+	width: 140px;
+	left: 118px;
+	bottom: 93px;
+	height: 1px;
+	background: var(--Grayish-Blue);
+}
+
+.we-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5em;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-title {
+	color: var(--Dark-Violet);
+}
+
+.card-subtitle {
+	max-width: 34ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-img {
+	order: -1;
 }
